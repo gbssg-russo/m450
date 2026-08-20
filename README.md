@@ -78,6 +78,36 @@ After creating either project:
 
 3. Delete the generated `UnitTest1.cs` file and create `PriceCalculatorTests.cs` in the test project.
 
+### Alternative: use Rider or Visual Studio
+
+You do not have to use the command line to create and configure the test project. Rider and Visual Studio can perform the same steps through their user interfaces.
+
+#### JetBrains Rider
+
+1. Open `M450.UnitTesting.sln`.
+2. In the Solution Explorer, right-click the solution and select **Add > New Project**.
+3. Select an **xUnit Test Project** or **MSTest Test Project** template.
+4. Name it `M450.UnitTesting.App.Tests`, choose the `tests` directory as its location, and create the project.
+5. Right-click the new test project and select **Add > Add Reference**.
+6. Select `M450.UnitTesting.App` and confirm the dialog.
+7. Delete the generated `UnitTest1.cs` file and create `PriceCalculatorTests.cs`.
+
+See [Get started with unit testing in Rider](https://www.jetbrains.com/help/rider/Getting_Started_with_Unit_Testing.html) for additional guidance.
+
+#### Visual Studio
+
+1. Open `M450.UnitTesting.sln`.
+2. In Solution Explorer, right-click the solution and select **Add > New Project**.
+3. Search for `test`, then select either **xUnit Test Project** or **MSTest Test Project** for C#.
+4. Name it `M450.UnitTesting.App.Tests`, choose the `tests` directory as its location, and create the project.
+5. Under the new test project, right-click **Dependencies** and select **Add Project Reference**.
+6. Select `M450.UnitTesting.App` and confirm the dialog.
+7. Delete the generated `UnitTest1.cs` file and create `PriceCalculatorTests.cs`.
+
+See [Unit test basics with Visual Studio Test Explorer](https://learn.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2022) for additional guidance.
+
+Whether you use the CLI or an IDE, verify that the test project is part of the solution and that its project file contains a `ProjectReference` to `M450.UnitTesting.App.csproj`.
+
 At this point the solution should have this structure:
 
 ```text
