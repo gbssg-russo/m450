@@ -125,7 +125,7 @@ tests/
 
 ## Exercise: write the tests
 
-Write the tests yourself. Use the **Arrange, Act, Assert** structure and descriptive names such as `CalculateTotal_WithValidValues_ReturnsExpectedTotal`.
+Write the tests yourself. First read the separate [Arrange, Act, Assert (AAA) guide](AAA_PATTERN.md), then use that structure and descriptive names such as `CalculateTotal_WithValidValues_ReturnsExpectedTotal`.
 
 Cover at least these behaviours:
 
