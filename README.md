@@ -86,7 +86,7 @@ You do not have to use the command line to create and configure the test project
 
 1. Open `M450.UnitTesting.sln`.
 2. In the Solution Explorer, right-click the solution and select **Add > New Project**.
-3. Select an **xUnit Test Project** or **MSTest Test Project** template.
+3. Select project type **Unit Test** and type **xUnit**.
 4. Name it `M450.UnitTesting.App.Tests`, choose the `tests` directory as its location, and create the project.
 5. Right-click the new test project and select **Add > Add Reference**.
 6. Select `M450.UnitTesting.App` and confirm the dialog.
